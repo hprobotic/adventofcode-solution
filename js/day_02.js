@@ -25,4 +25,24 @@ const exercise_01 = _.pipe([
 ])
 
 console.log(exercise_01(INPUT))
-assert.equal(exercise_01(INPUT), 5139)
+assert.equal(exercise_01(INPUT), 51139)
+
+const computeDivisibleChecksum = xs => {
+  xs = xs.sort((a, b) => a - b)
+  for (let i = xs.length - 1; i > 0; i--) {
+    for (let j = 0; j < i; j++) {
+      const a = xs[i]
+      const b = xs[j]
+      if (a % b === 0) return a / b
+    }
+  }
+}
+
+const exercise_02 = _.pipe([
+  splitRows,
+  _.map(_.pipe([parseRow, computeDivisibleChecksum])),
+  _.sum,
+])
+
+console.log(exercise_02(INPUT))
+assert.equal(exercise_02(INPUT), 272)

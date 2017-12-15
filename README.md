@@ -7,7 +7,7 @@ Advent of Code is a series of small programming puzzles for a variety of skill l
 ### Quick links:
 
 - [x] [Day 1: Inverse Captcha]()
-- [ ] [Day 2: Corruption Checksum]()
+- [x] [Day 2: Corruption Checksum]()
 - [ ] [Day 3: Spiral Memory]()
 - [ ] [Day 4: High-Entropy Passphrases]()
 - [ ] [Day 5: A Maze of Twisty Trampolines, All Alike]()
