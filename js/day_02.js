@@ -2,7 +2,6 @@ const assert = require('assert')
 const _ = require('redash')
 const fs = require('fs')
 const INPUT = fs.readFileSync('../inputs/day_02.txt', 'utf8')
-  .split('\n')[0]
 
 const splitRows = _.pipe([
   _.split('\n'),
@@ -26,4 +25,4 @@ const exercise_01 = _.pipe([
 ])
 
 console.log(exercise_01(INPUT))
-assert.equal(exercise_01(INPUT), 32020)
+assert.equal(exercise_01(INPUT), 5139)
